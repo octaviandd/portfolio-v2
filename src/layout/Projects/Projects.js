@@ -3,14 +3,13 @@
 import React from "react";
 import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
-import { useSpring, animated } from "react-spring";
 
 export default function Projects() {
   return (
     <React.Fragment>
       <Hero>
         <HeroTitle>
-          <p>Projects</p>
+          <p id="projects">Projects</p>
         </HeroTitle>
         <ProjectList>
           <Project>
@@ -50,10 +49,14 @@ export default function Projects() {
               </div>
               <div>
                 <ScrollAnimation animateIn="flipInX" delay="400">
-                  <LinkButton href="#">Live</LinkButton>
+                  <LinkButton href="https://github.com/octaviandd/invite-Me">
+                    Live
+                  </LinkButton>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="flipInX" delay="400">
-                  <LinkButton>Source</LinkButton>
+                  <LinkButton href="https://github.com/octaviandd/invite-Me">
+                    Source
+                  </LinkButton>
                 </ScrollAnimation>
               </div>
             </ProjectDescription>
@@ -84,10 +87,14 @@ export default function Projects() {
               </div>
               <div>
                 <ScrollAnimation animateIn="flipInX" delay="400">
-                  <LinkButton href="#">Live</LinkButton>
+                  <LinkButton href="https://evening-badlands-78182.herokuapp.com/">
+                    Live
+                  </LinkButton>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="flipInX" delay="400">
-                  <LinkButton>Source</LinkButton>
+                  <LinkButton href="https://github.com/octaviandd/DREAMMARKET">
+                    Source
+                  </LinkButton>
                 </ScrollAnimation>
               </div>
             </ProjectDescription>
@@ -102,6 +109,101 @@ export default function Projects() {
               </ProjectImage>
             </ScrollAnimation>
           </Project>
+          <Project>
+            <ScrollAnimation animateIn="fadeInLeft">
+              <ProjectImage>
+                <ProjectTopBar>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </ProjectTopBar>
+                <ProjectImageContainer3></ProjectImageContainer3>
+              </ProjectImage>
+            </ScrollAnimation>
+            <ProjectDescription>
+              <ScrollAnimation animateIn="color-border">
+                <h1>Portfolio V2</h1>
+                <BorderAnimate
+                  animateIn="fadeInRight"
+                  delay="1"
+                ></BorderAnimate>
+              </ScrollAnimation>
+              <h4>
+                The second version of my portfolio, animations made with React
+                Spring and Animate On Scroll, rest of the element are original.
+                It is also a mobile responsive web application.
+              </h4>
+              <div>
+                <ul>
+                  <li>HTML / CSS / JavaScript ES6/ES7</li>
+                  <li>ReactJS</li>
+                  <li>React Spring</li>
+                  <li>React Animate On Scroll</li>
+                  <li>Styled Components</li>
+                </ul>
+              </div>
+              <div>
+                <ScrollAnimation animateIn="flipInX" delay="400">
+                  <LinkButton href="http://www.octaviandavid.com">
+                    Live
+                  </LinkButton>
+                </ScrollAnimation>
+                <ScrollAnimation animateIn="flipInX" delay="400">
+                  <LinkButton href="https://github.com/octaviandd/portfolio-v2">
+                    Source
+                  </LinkButton>
+                </ScrollAnimation>
+              </div>
+            </ProjectDescription>
+          </Project>
+          <Project>
+            <ProjectDescription>
+              <ScrollAnimation animateIn="color-border">
+                <h1>Mountain Resort</h1>
+                <BorderAnimate
+                  animateIn="fadeInRight"
+                  delay="1"
+                ></BorderAnimate>
+              </ScrollAnimation>
+              <h4>
+                Full stack application made for my interest in Psychology, it is
+                an application that allows users to write stories about their
+                dreams and stories. The front end was build with styling from
+                Shards UI while the backend is connected to the Redux Store.
+              </h4>
+              <div>
+                <ul>
+                  <li>HTML / CSS / JavaScript ES6/ES7</li>
+                  <li>ReactJS / Context API / React Router</li>
+                  <li>Netlify</li>
+                  <li>React Animate On Scroll</li>
+                  <li>Styled Components</li>
+                </ul>
+              </div>
+              <div>
+                <ScrollAnimation animateIn="flipInX" delay="400">
+                  <LinkButton href="https://mountain-resort-react-od.netlify.com/">
+                    Live
+                  </LinkButton>
+                </ScrollAnimation>
+                <ScrollAnimation animateIn="flipInX" delay="400">
+                  <LinkButton href="https://github.com/octaviandd/mountain-resort-react">
+                    Source
+                  </LinkButton>
+                </ScrollAnimation>
+              </div>
+            </ProjectDescription>
+            <ScrollAnimation animateIn="fadeInRight">
+              <ProjectImage>
+                <ProjectTopBar>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </ProjectTopBar>
+                <ProjectImageContainer4></ProjectImageContainer4>
+              </ProjectImage>
+            </ScrollAnimation>
+          </Project>
         </ProjectList>
       </Hero>
     </React.Fragment>
@@ -110,7 +212,8 @@ export default function Projects() {
 
 const Hero = styled.div`
   background: #89023e;
-  height: 400vh;
+  height: 100%;
+  padding-bottom: 3rem;
 `;
 
 const HeroTitle = styled.div`
@@ -133,6 +236,7 @@ const ProjectList = styled.div`
 
 const Project = styled.div`
   display: flex;
+
   align-items: center;
   justify-content: space-around;
   margin-top: 5rem;
@@ -196,10 +300,12 @@ const ProjectTopBar = styled.div`
 const ProjectImageContainer1 = styled.div`
   height: 500px;
   width: 600px;
-  padding-left: 10px;
   background-image: url("https://github.com/octaviandd/invite-Me/raw/master/pjimage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  border: 20px solid #36505c;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
 
   @media (max-width: 769px) {
     width: 300px;
@@ -210,11 +316,42 @@ const ProjectImageContainer1 = styled.div`
 const ProjectImageContainer2 = styled.div`
   height: 500px;
   width: 600px;
-  padding-left: 10px;
-  background-image: url("https://imgur.com/a/7y2nIHV");
+  background-image: url("https://raw.githubusercontent.com/octaviandd/DREAMMARKET/master/dreammarket-image.png");
   background-repeat: no-repeat;
   background-size: cover;
+  border: 20px solid #36505c;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  @media (max-width: 769px) {
+    width: 300px;
+    height: 250px;
+  }
+`;
 
+const ProjectImageContainer3 = styled.div`
+  height: 500px;
+  width: 600px;
+  background-image: url("https://github.com/octaviandd/portfolio-v2/raw/master/portfolio-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 20px solid #36505c;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  @media (max-width: 769px) {
+    width: 300px;
+    height: 250px;
+  }
+`;
+
+const ProjectImageContainer4 = styled.div`
+  height: 500px;
+  width: 600px;
+  background-image: url("https://github.com/octaviandd/mountain-resort-react/raw/master/mountain-resort.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 20px solid #36505c;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
   @media (max-width: 769px) {
     width: 300px;
     height: 250px;
@@ -238,4 +375,3 @@ const LinkButton = styled.a`
   font-size: 18px;
 `;
 
-const BorderAnimate = styled.div``;
