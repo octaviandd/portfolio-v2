@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Header from "../layout/Header/Header";
 import Skills from "../layout/Skills/Skills";
 import Projects from "../layout/Projects/Projects";
+import Contact from "../layout/Contact/Contact";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <Skills />
       <Projects />
+      <Contact />
     </React.Fragment>
   );
 }
