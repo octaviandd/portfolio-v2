@@ -1,7 +1,7 @@
 ![](portfolio-image.png)
 
 
-# invite-Me
+# Portfolio V2
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 This is my second version of my portfolio, it is a slick, easy to navigate one page web application.
