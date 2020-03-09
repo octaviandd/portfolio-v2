@@ -18,7 +18,7 @@ export default function Header() {
               {/* <ScrollAnimation animateIn="fadeIn">
                 <span>,</span>
               </ScrollAnimation> */}
-              <ScrollAnimation animateIn="fadeIn" delay="1000">
+              <ScrollAnimation animateIn="fadeIn" delay="900">
                 <span>I'm Octavian</span>
               </ScrollAnimation>
             </div>
@@ -27,7 +27,7 @@ export default function Header() {
         <HeroSubtitle>Software developer</HeroSubtitle>
       </HeroTitle>
       <SubHeader />
-      <ScrollAnimation animateIn="bounceInDown" delay="2500">
+      <ScrollAnimation animateIn="bounceInDown" delay="1200">
         <HeroArrow>
           <i className="far fa-arrow-alt-circle-down"></i>
         </HeroArrow>
