@@ -17,14 +17,12 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: #c76972;
+    background-color: #89023e;
     box-sizing: border-box;
     font-family: "Sen", sans-serif;
   }
 
-  .color-border{
-    color: white;
-  }
+  
 
 
 `;
